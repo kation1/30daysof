@@ -5,7 +5,11 @@ class Solution
 {
 	static void Main(String[] args)
 	{
-		/* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution */
+		/* for i in range(int(input())):
+			string = input()
+			print(string[0::2], string[1::2])*/
+
+
 		int L = Convert.ToInt32(Console.ReadLine());
 		string[] words = new string[L];
 		int i = 0;
