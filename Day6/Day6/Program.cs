@@ -14,14 +14,14 @@ class Solution
 		string[] words = new string[L];
 		int i = 0;
 
-		while (i < L)
+		foreach (string x in words)
 		{
 			string w = Console.ReadLine();
 			words[i++] = w;
 		}
 
 		i = 0;
-		while (i < L)
+		foreach (string x in words)
 		{
 			char[] c = words[i].ToCharArray();
 			string evens = "";
