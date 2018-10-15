@@ -1,26 +1,46 @@
-﻿using System;
+﻿using System.CodeDom.Compiler;
 using System.Collections.Generic;
+using System.Collections;
+using System.ComponentModel;
+using System.Diagnostics.CodeAnalysis;
+using System.Globalization;
 using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Runtime.Serialization;
+using System.Text.RegularExpressions;
+using System.Text;
+using System;
 
 class Solution
 {
-	static int Find_gcd(int a, int b)
+
+	// Complete the factorial function below.
+	static int factorial(int n)
 	{
-		if (a <= b)
+		if (n < 2)
 		{
-			Console.WriteLine(a);
+			return n;
 		}
-		else
-		{
-			Find_gcd(a, b);
-		}
+
+		return n*factorial(n - 1);
 	}
-static void Main(String[] args)
+
+	static void Main(string[] args)
 	{
-		/* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution */
-		int a = 0;
-		int b = 0;
-		a = Convert.ToInt32(Console.ReadLine());
-		b = Convert.ToInt32(Console.ReadLine());
+		//TextWriter textWriter = new StreamWriter(@System.Environment.GetEnvironmentVariable("OUTPUT_PATH"), true);
+
+		Console.WriteLine("Enter an integer");
+
+		int n = Convert.ToInt32(Console.ReadLine());
+
+		int result = factorial(n);
+
+		Console.WriteLine($"Factorial of {n} is {result}");
+		Console.ReadKey();
+		//textWriter.WriteLine(result);
+
+		//textWriter.Flush();
+		//textWriter.Close();
 	}
 }
