@@ -5,23 +5,18 @@ class Solution
 {
 	static void Main(String[] args)
 	{
-		/* for i in range(int(input())):
-			string = input()
-			print(string[0::2], string[1::2])*/
-
-
 		int L = Convert.ToInt32(Console.ReadLine());
 		string[] words = new string[L];
 		int i = 0;
 
-		while (i < L)
+		foreach (string x in words)
 		{
 			string w = Console.ReadLine();
 			words[i++] = w;
 		}
 
 		i = 0;
-		while (i < L)
+		foreach (string b in words)
 		{
 			char[] c = words[i].ToCharArray();
 			string evens = "";
@@ -37,3 +32,8 @@ class Solution
 		}
 	}
 }
+
+/* for i in range(int(input())):
+	string = input()
+	print(string[0::2], string[1::2])*/
+
