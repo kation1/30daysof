@@ -16,7 +16,7 @@ class Solution
 {
 	/*
         while(n > 0):
-        remainder = n%2;
+        remainder = n%2; 
         n = n/2;
         Insert remainder to front of a list or push onto a stack
 
