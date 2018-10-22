@@ -42,6 +42,8 @@ class Student : Person
 			total = Scores[i] + total;
 		}
 
+		total = Scores.Sum();
+
 		int average = total / Scores.Length;
 		if (average <= 100 && average>=90)
 			grade = 'O';

@@ -53,7 +53,9 @@ class Solution
 				count = 0;
 			}
 			if (count > end)
+			{
 				end = count;
+			}
 		}
 		Console.WriteLine(end);
 	}
