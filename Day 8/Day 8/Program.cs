@@ -9,10 +9,12 @@ class Solution
 		Dictionary<string, int> phonebook = new Dictionary<string, int>();
 
 		int n = Convert.ToInt32(Console.ReadLine());
-		for (int i = 0; i <= n -1; i++)
+		for (int i = 0; i <= n - 1; i++)
 		{
-			string name = Console.ReadLine();
-			int number = Convert.ToInt32(Console.ReadLine());
+			string input = Console.ReadLine();
+			var values = input.Split(' ');
+			string name = values[0];
+			int number = int.Parse(values[1]);
 			phonebook.Add(name, number);
 		}
 		for (int i = 0; i < n; i++)
