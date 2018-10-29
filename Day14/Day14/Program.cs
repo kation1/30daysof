@@ -24,7 +24,7 @@ class Difference
 		maximumDifference = (max - min);
 	}
 
-	//provded by hackerrack
+	//provided by hackerrack
 } // End of Difference Class
 
 class Solution
